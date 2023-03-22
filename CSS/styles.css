@@ -256,22 +256,41 @@ i > .elements-filtre-2 {
     border-top-right-radius: 20px;
 }
 
+.hebergements-cards-2 img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 .hebergements .hebergements-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-   
+    justify-content: space-around;
+}
+
+.hebergements .hebergements-cards-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .hebergements-cards .card {
-   
-    margin: 12px;
+    margin: 5px;
     margin-top: 20px;
     margin-bottom:20px;
-    width: 200px;
+    width: 150px;
 }
 
+.hebergements-cards-2 .card {
+    margin: 5px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    width: 150px;
+}
 .voir-plus {
     margin-top: 40px;
 }
@@ -316,7 +335,7 @@ i > .elements-filtre-2 {
     box-sizing: border-box;
 }
 
-/*
+
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
@@ -328,7 +347,7 @@ i > .elements-filtre-2 {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
-} */
+} 
 
 /*Code Activités*/
 
