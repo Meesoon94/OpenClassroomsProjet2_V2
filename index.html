@@ -24,8 +24,15 @@
                 
                         <nav>
                             <ul>
-                                <li class="padding10"><a href=#lien-hebergement class="lien-menu">Hébergements</a></li>
-                                <li><a href=#lien-activites class="lien-menu">Activités</a></li>
+                                <table>
+                                    <tr>
+                                    <td><li><a href=#lien-hebergement class="lien-menu">Hébergements</a></li>
+                                    </td>
+                                    <td><li><a href=#lien-activites class="lien-menu">Activités</a></li>
+                                    </td>
+                                    </tr>
+                                </table>
+                                
                             </ul>
                         </nav>
                    
@@ -34,7 +41,7 @@
         </header>
         <main>
 
-            <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+            <h1 class="titre-principal">Trouvez votre hébergement pour des vacances de rêves</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <div class="formulaire-de-recherche">
                 <form method="get" action="">
@@ -56,10 +63,12 @@
 
             <div class="filtres">
                 <p>Filtres</p>
-                <i class="fa-solid fa-money-bill"><span class="elements-filtre">Economique</span></i>
-                <i class="fa-solid fa-person"><span class="elements-filtre">Famille</span></i>
-                <i class="fa-solid fa-heart"><span class="elements-filtre">Romantique</span></i>
-                <i class="fa-solid fa-star"><span class="elements-filtre">Nos pépites</span></i>
+                <div class="filtre-mobile">
+                <div class="theme"><i class="fa-solid fa-money-bill"><span class="elements-filtre">Economique</span></i></div>
+                <div class="theme"><i class="fa-solid fa-person"><span class="elements-filtre">Familial</span></i></div>
+                <div class="theme"><i class="fa-solid fa-heart"><span class="elements-filtre">Romantique</span></i></div>
+                <div class="theme"><i class="fa-solid fa-star"><span class="elements-filtre">Nos pépites</span></i></div>
+                </div>
             </div>
 
             <div class="point-info">
@@ -72,8 +81,8 @@
                         <h2>Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
+                        <a href="#">
                         <article class="card">
-                            <a href="#">
                             <img src="images/hebergements/fred-kleber.jpg" alt="Photo d'une chambre d'hôtel">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -89,10 +98,12 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
-                            </a>
+                            
                         </article>
+                        </a>
+
+                        <a href="#">
                         <article class="card">
-                            <a href="#">
                             <img src="images/hebergements/febrian-zakaria.jpg" alt="Photo d'une chambre d'hôtel Chez Amina">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -108,10 +119,11 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                            </a>
                         </article>
+                        </a>
+
+                        <a href="#">
                         <article class="card">
-                            <a href="#">
                             <img src="images/hebergements/reisetopia.jpg" alt="Photo d'une chambre d'hôtel Les Mouettes">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -127,12 +139,14 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                            </a>
                         </article>
+                        </a>
                     </div>
+
+
                     <div class="hebergements-cards-2">
+                        <a href="#">
                         <article class="card">
-                            <a href="#">
                             <img src="images/hebergements/annie-spratt.jpg" alt="Photo d'une chambre d'hôtel de la mer">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -148,10 +162,10 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                            </a>
                         </article>
+                        </a>
+                        <a href="#">
                         <article class="card">
-                            <a href="#">
                             <img src="images/hebergements/marcus-loke.jpg" alt="Photo d'une chambre de l'auberge La Canebière">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -167,10 +181,10 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                            </a>
                         </article>
+                        </a>
+                        <a href="#">
                         <article class="card">
-                            <a href="#">
                             <img src="images/hebergements/nicate-lee.jpg" alt="Photo d'une chambre de l'auberge Le panier">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -186,11 +200,12 @@
                                 <i class="fa-xs fa-solid fa-star" style="color: #e0e2e6;" aria-hidden="true"></i>
                                 <span class="sr-only">Note de 4 sur 5</span>
                             </div>
-                            </a>
                         </article>
+                        </a>
                     </div>
                     <h3 class="voir-plus">Afficher plus</h3> 
                 </section>
+
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -198,8 +213,8 @@
                     </div>
                     <div class="populaires-cards">
                     
+                        <a href="#" class="lien-card-populaires">
                         <article class="card">
-                            <a href="#" class="lien-card-populaires">
                             <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -215,10 +230,10 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                            </a>
                         </article>
+                        </a>
+                        <a href="#" class="lien-card-populaires">
                         <article class="card">
-                            <a href="#" class="lien-card-populaires">
                             <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -233,11 +248,11 @@
                                     <i class="fa-xs fa-solid fa-star" style="color: #e0e2e6;" aria-hidden="true"></i>
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
-                            </div>
-                            </a>  
+                            </div> 
                         </article>
+                        </a>
+                        <a href="#" class="lien-card-populaires">
                         <article class="card">
-                            <a href="#" class="lien-card-populaires">
                             <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -253,8 +268,8 @@
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
                             </div>
-                            </a>
                         </article>
+                        </a>
                     </div>
                 </section>
             </div>
@@ -289,7 +304,7 @@
         </main>
         <footer>
             <div class="footer-container">
-                <ul>
+            <ul>
                 <li><h4>A propos</h4></li>
                 <li>Fonctionnement du site</li>
                 <li>Conditions Générales</li>
