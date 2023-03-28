@@ -440,6 +440,17 @@ h2 {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .theme .fa-solid.fa-fire .elements-filtre {
+        padding: 5px;
+    }
+
+    .theme {
+        margin-left:5px;
+        margin-right: 5px;
+    }
+
+    
 }
 
 /* Small devices (phones, less than 768px) */
@@ -531,6 +542,7 @@ h2 {
         text-align: center;
         margin: 5px;
         padding: 0px;
+        padding-top: 5px;
     }
 
     .point-info {
