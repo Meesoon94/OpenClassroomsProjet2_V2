@@ -425,8 +425,12 @@ h2 {
         justify-content: space-between;
     }
 
+    .populaires-cards a {
+        width: 33%;
+    }
+
     .populaires-cards .card {
-        width: 30%;
+        width: 100%;
     }
 
     .populaires-cards .card-title {
@@ -555,7 +559,8 @@ h2 {
     }
 
     .populaires {
-        width: 100%;   
+        width: 100%; 
+        margin-right: 0px;  
     }
 
     .hebergements-cards {
