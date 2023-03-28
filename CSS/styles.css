@@ -450,6 +450,10 @@ h2 {
         margin-right: 5px;
     }
 
+    .filtres {
+        flex-direction: column;
+    }
+
     
 }
 
