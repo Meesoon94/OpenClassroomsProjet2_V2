@@ -583,7 +583,12 @@ h2 {
 
     .populaires-cards {
         display: flex;
-        flex-direction: column;    
+        flex-direction: column; 
+        width: 100%;   
+    }
+
+    .populaires-cards a {
+        width: auto;
     }
 
     .populaires-cards .card {
