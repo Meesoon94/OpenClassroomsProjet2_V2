@@ -780,13 +780,16 @@ a .activite-card {
 
     .activites-marseille a {
         width: 90%;
-        padding:0px;
-        margin-left: 25px;
-        margin-bottom: 15px;
+        padding-left:25px;
     }
 
-    .activite-card {
-        width: auto;
+    .activite-card img {
+        height: 150px;
+        width: 100%;
+    }
+
+    a .activite-card {
+        height: 200px;
     }
 
     #lien-activites {
