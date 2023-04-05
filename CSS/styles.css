@@ -145,6 +145,16 @@ h1 {
     padding-bottom: 5px;
 }
 
+form {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.bouton-rechercher input {
+    font-size: 0px;
+}
+
 .bouton-rechercher {
     display: flex;
     flex-direction: row;
@@ -304,6 +314,7 @@ i > .elements-filtre-2 {
 
 .voir-plus {
     margin-top: 40px;
+    padding-left: 15px;
 }
 
 .card-txt {
@@ -627,8 +638,9 @@ a .activite-card {
     }
 
     .formulaire-de-recherche {
-        margin-bottom: 0px;
-        padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;    
     }
 
     .zone-recherche {
@@ -653,6 +665,11 @@ a .activite-card {
         display: flex;
         flex-direction: column;
         padding: 5px;   
+    }
+
+    .filtres p {
+        padding-left: 10px;
+        padding-bottom: 15px;
     }
 
     .elements-filtre {
