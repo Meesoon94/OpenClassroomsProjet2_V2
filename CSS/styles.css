@@ -1,4 +1,5 @@
 /****** General ***********/
+@import url(normalize.css);
 
 * {
     font-family: 'Raleway', sans-serif;
@@ -58,6 +59,10 @@ body {
     color: var(--main-bg-color)
 }
 
+.grey {
+    color: var(--main-bg-color)
+}
+
 /**CSS Header**/
 
 .header-container {
@@ -78,6 +83,7 @@ body {
 
 .header-container li {
     padding: 15px;
+    border-top: transparent 1px solid;
 }
 
 .header-container li:hover {
@@ -98,7 +104,6 @@ a:visited {
 
 a {
     text-decoration: none;
-    padding: 10px;
     color: black;
 }
 
@@ -194,14 +199,14 @@ input {
 
 .filtre-mobile {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row; 
+    gap: 10px;   
 }
     
 .theme {
     border: 2px solid #F2F2F2;
     border-radius: 25px;
-    padding: 5px;
-    margin: 10px;
+    gap: 10px;
     height: 30px;
     padding-top: 10px;
     padding-left: 10px;
@@ -211,7 +216,6 @@ input {
     font-weight: bold;
     padding-right: 20px;
     padding: 10px;
-    padding-top: 25px;
 }
 
 i > .elements-filtre {
@@ -329,16 +333,21 @@ i > .elements-filtre-2 {
 
 .populaires {
     width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.populaires-cards {
-    padding: 0px 15px 0px 15px;
 }
 
 .populaires-cards img {
@@ -354,10 +363,7 @@ i > .elements-filtre-2 {
     margin-top: 2px;
 }
 
-.lien-card-populaires .card {
-    display: flex;
-    flex-direction: row;
-}
+
 
 .populaires-cards .card-content {
     width: 66%;
@@ -387,8 +393,8 @@ i > .elements-filtre-2 {
 /*Code Activités*/
 
 #lien-activites {
-    padding: 10px;
-    margin-top: 50px;
+    padding: 15px;
+    margin-top: 30px;
 }
 
 .activite-card img {
@@ -400,7 +406,7 @@ i > .elements-filtre-2 {
 }
 
 .activites-marseille a {
-    width: 25%;
+    width: 24%;
 }
 
 a .activite-card {
@@ -421,6 +427,8 @@ a .activite-card {
 .activites-marseille {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 15px;
 }
 
 /* code footer*/
@@ -430,7 +438,6 @@ a .activite-card {
     flex-direction: row;
     justify-content: left;
     background-color: #F2F2F2;
-    padding: 15px;
     width: 100%;
 }
 
@@ -439,8 +446,13 @@ a .activite-card {
 }
 
 .footer-container li {
-    padding: 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
     list-style: none;
+}
+
+.footer-container h4{
+    padding-top: 20px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -517,7 +529,7 @@ a .activite-card {
     /* Filtres Tablette*/
 
     .theme .fa-solid.fa-fire .elements-filtre {
-        padding: 5px;
+        padding: 10px;
     }
 
     .theme {
@@ -527,6 +539,7 @@ a .activite-card {
     
     .filtres {
         flex-direction: column;
+        gap: 10px;
     }
 
     .filtres p {
@@ -603,13 +616,12 @@ a .activite-card {
         margin-top: 15px;
         margin-bottom: 0px;
         height: 100px;
-        border-bottom: solid 2px #F2F2F2;
     }
 
     .header-container ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        width: 100%;
     }
     
     .header-container li:hover {
@@ -618,8 +630,10 @@ a .activite-card {
     }
 
     .header-container li {
-        padding-left: 30px;
-        padding-right: 30px;
+        width: 50%;
+        text-align: center;
+        border-bottom: #F2F2F2 solid 2px;
+        border-top: none;
     }
 
 /* Formulaire recherche mobile*/
@@ -628,13 +642,13 @@ a .activite-card {
         font-size: large;
         margin-top: 20px;
         margin-bottom: 20px;
-        padding-left: 10px;
+        margin-left: 10px;
     }
 
     h1 + p {
         font-size: medium;
         text-align: left;
-        padding-left: 10px;
+        padding: 10px;
     }
 
     .formulaire-de-recherche {
@@ -685,9 +699,9 @@ a .activite-card {
 
     .filtre-mobile {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;   
-        justify-content: space-around;
+        flex-flow: row wrap;   
+        justify-content: space-between;
+        gap: 0px;
     }
 
     .theme {
@@ -819,7 +833,6 @@ a .activite-card {
     .footer-container {
         flex-direction: column;
         justify-content: space-between;
-        padding: 15px;
         width: 100%;
     }
 
